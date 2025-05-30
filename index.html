@@ -3,47 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>King Kamir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Hello, world!</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        font-family: 'Fredoka', sans-serif;
+      }
+
+      .custom-navbar {
+        background-color: #e30613 !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      .brand-gradient {
+        background: linear-gradient(to bottom, #ffeb3b, #ff9800);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .navbar-brand-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .nav-link {
+        font-weight: 600;
+      }
+
+      .btn-outline-warning {
+        font-weight: bold;
+        box-shadow: 0 0 6px #ffeb3b;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
       <div class="container-fluid">
-        <h1 style="font-size:25px" class="navbar-brand">King Kamir</h1>
-        <img style="width:50px; border-radius:30px; margin-right:50px" src="logo.jpg">
+        <img src="img/logo.jpg" alt="Logo" class="navbar-brand-img">
+        <span class="navbar-brand brand-gradient">King Kamir</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-light" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-light" href="#">Produk</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Dropdown</a>
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Lainnya</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+                <li><a class="dropdown-item" href="#">Kontak</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Cari..." aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Cari</button>
           </form>
         </div>
       </div>
     </nav>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade mt-2">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/logo.jpg" style="height:350px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/logo2.jpg" style="height:350px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/logo_rasa.jpg" style="height:350px" class="d-block w-100" alt="logo king kamir">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
